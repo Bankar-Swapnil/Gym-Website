@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym Website/Contact Us</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      h1 {
+        color: wheat;
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header section starts      -->
+
+    <header class="header">
+      <nav class="head">
+        <div>
+          <img class="log" src="images/logo.png" alt="" />
+        </div>
+        <a href="#" class="logo"> <span>Level</span>Up </a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <a href="/index.HTML">Home</a>
+        <a href="#">Contact Us</a>
+        <a href="/supplement.html">Supplement</a>
+        <a href="/pricing.html">Plans</a>
+        <a href="/services.html">Service</a>
+        <a href="/courses.html">Courses</a>
+        <div class="mx-2 my-2 text-center">
+          <button
+            class="sigbtn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#SignUpModal"
+          >
+            SignUp
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- header section ends     -->
+
+    <!-- SignUp Modal start-->
+    <div
+      class="modal fade"
+      id="SignUpModal"
+      tabindex="-1"
+      aria-labelledby="SignUpModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="SignUpModalLabel">
+              Get LevelUp Gym Account
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="ssac">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="cexampleInputPassword1" class="form-label"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="cexampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button
+                type="submit"
+                class="sigbtn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                SignUp
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="sigbtn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SignUp Modal end -->
+
+    <!-- form section started -->
+    <div class="container banne margb" id="getstar">
+      <div class="row g-3 forms formss">
+        <div class="col-5">
+          <label for="inputCity" class="form-label">Name</label>
+          <input type="text" class="form-control" aria-label="First name" />
+        </div>
+        <div class="col-5">
+          <label for="inputCity" class="form-label">Email</label>
+          <input type="email" class="form-control" aria-label="Last name" />
+        </div>
+        <div class="col-8">
+          <label for="inputCity" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress" />
+        </div>
+        <div class="col-2">
+          <label for="inputCity" class="form-label">age</label>
+          <input type="number" class="form-control" id="age" />
+        </div>
+        <div class="col-6">
+          <label class="label" for="inlineRadio1">Gender</label>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio1"
+              value="option1"
+            />
+            <label class="form-check-label" for="inlineRadio1">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineRadio2">Female</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineRadio2">Other</label>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <label class="label" for="inlineRadio1"
+            >Do you declare a disability?</label
+          >
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio1"
+              value="option1"
+            />
+            <label class="form-check-label" for="inlineRadio1">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineRadio2">No</label>
+          </div>
+        </div>
+        <div class="col-10">
+          <label class="label" for="inlineRadio1">If yes,please specify</label>
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="floatingTextarea2"
+              style="height: 100px"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="inputState" class="form-label">Slot</label>
+          <select id="inputState" class="form-select">
+            <option selected>Morning</option>
+            <option>Evening</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="inputState" class="form-label">Mode</label>
+          <select id="inputState" class="form-select">
+            <option selected>Offline</option>
+            <option>Online</option>
+          </select>
+        </div>
+
+        <div class="col-2">
+          <label for="inputCity" class="form-label">Weight</label>
+          <input type="number" class="form-control" id="weight" />
+        </div>
+        <div class="col-2">
+          <label for="inputCity" class="form-label">Height</label>
+          <input type="number" class="form-control" id="height" />
+        </div>
+
+        <div class="col-md-3">
+          <label for="inputState" class="form-label">Goals</label>
+          <select id="inputState" class="form-select">
+            <option selected>Loss Weight</option>
+            <option>Gain Weight</option>
+            <option>Maintain Weight</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="inputState" class="form-label">Membership</label>
+          <select id="inputState" class="form-select">
+            <option selected>1 Month</option>
+            <option>6 Month</option>
+            <option>1 Year</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputState" class="form-label">Blood Group</label>
+          <select id="inputState" class="form-select">
+            <option selected>A+</option>
+            <option>B+</option>
+            <option>AB+</option>
+            <option>A-</option>
+            <option>B-</option>
+            <option>AB-</option>
+            <option>O</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputState" class="form-label">personal trainer</label>
+          <select id="inputState" class="form-select">
+            <option selected>No</option>
+            <option>Yes</option>
+          </select>
+        </div>
+        <div class="col-md-10 swap1">
+          <h1>Workout type</h1>
+        </div>
+        <div class="col-10">
+          <div class="col-md-4">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Back
+              </label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Biceps
+              </label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Chest
+              </label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Leg
+              </label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Shoulder
+              </label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Tricep
+              </label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Cardio
+              </label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                ABS
+              </label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <h1>Somthing eles</h1>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea2"
+                style="height: 100px"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="rok">
+            <button type="button" class="btn btn-success">Submit</button>
+          </div>
+        </div>
+      </div>
+      <div class="marg"></div>
+    </div>
+
+    <!-- form section ended -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a class="links" href="/index.HTML">Home</a>
+          <a class="links" href="#">Contact Us</a>
+          <a class="links" href="/supplement.html">Supplement</a>
+          <a class="links" href="/pricing.html">Plans</a>
+          <a class="links" href="/services.html">Service</a>
+          <a class="links" href="/courses.html">Courses</a>
+        </div>
+
+        <div class="box">
+          <h3>opening hours</h3>
+          <p>monday : <i> 7:00am - 10:30pm </i></p>
+          <p>tuesday : <i> 7:00am - 10:30pm </i></p>
+          <p>wednesday : <i> 7:00am - 10:30pm </i></p>
+          <p>friday : <i> 7:00am - 10:30pm </i></p>
+          <p>saturday : <i> 7:00am - 10:30pm </i></p>
+          <p>sunday : <i> closed </i></p>
+        </div>
+
+        <div class="box">
+          <h3>opening hours</h3>
+          <p><i class="fas fa-phone"></i> +123-456-7890</p>
+          <p><i class="fas fa-phone"></i> +111-222-3333</p>
+          <p><i class="fas fa-envelope"></i> SKNCOE@gmail.com</p>
+          <p><i class="fas fa-map"></i> Pune, india - 414001</p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <form action="">
+            <input
+              type="email"
+              name=""
+              class="email"
+              placeholder="enter your email"
+              id=""
+            />
+            <input type="submit" value="subscribe" class="btn" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="credit">
+      © 2022 Proudly Powered by <span>SKNCOE Students</span> | all rights
+      reserved !
+    </div>
+
+    <!-- footer section ends -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

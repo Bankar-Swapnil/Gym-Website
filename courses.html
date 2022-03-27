@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym Website/Courses</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts      -->
+
+    <header class="header">
+      <nav class="head">
+        <div>
+          <img class="log" src="images/logo.png" alt="" />
+        </div>
+        <a href="#" class="logo"> <span>Level</span>Up </a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <a href="/index.HTML">Home</a>
+        <a href="/getStart.html">Contact Us</a>
+        <a href="/supplement.html">Supplement</a>
+        <a href="/pricing.html">Plans</a>
+        <a href="/services.html">Service</a>
+        <a href="#">Courses</a>
+        <div class="mx-2 my-2 text-center">
+          <button
+            class="sigbtn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#SignUpModal"
+          >
+            SignUp
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- header section ends     -->
+
+    <!-- SignUp Modal start-->
+    <div
+      class="modal fade"
+      id="SignUpModal"
+      tabindex="-1"
+      aria-labelledby="SignUpModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="SignUpModalLabel">
+              Get LevelUp Gym Account
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="ssac">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="cexampleInputPassword1" class="form-label"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="cexampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button
+                type="submit"
+                class="sigbtn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                SignUp
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="sigbtn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SignUp Modal end -->
+
+    <!-- counter section starts  -->
+
+    <section class="counter margb">
+      <div class="container box-container">
+        <div class="box">
+          <h3>40+</h3>
+          <p>online courses</p>
+        </div>
+
+        <div class="box">
+          <h3>320+</h3>
+          <p>gym equipments</p>
+        </div>
+
+        <div class="box">
+          <h3>180+</h3>
+          <p>online instructors</p>
+        </div>
+
+        <div class="box">
+          <h3>560+</h3>
+          <p>satiesfied clients</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- counter section ends -->
+
+    <!-- courses section starts  -->
+
+    <section class="courses" id="courses">
+      <div class="heading">
+        <span>our courses</span>
+      </div>
+
+      <div class="box-container container">
+        <div class="box">
+          <div class="image">
+            <img src="images/courses/img-1.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <span> <i class="fas fa-calendar"></i> mon - sat </span>
+              <span> <i class="fas fa-clock"></i> 1 hours </span>
+            </div>
+            <h3>weight lifting and diet planing classes</h3>
+            <a href="/getStart.html" class="btn">Join Now</a>>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/courses/img-2.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <span> <i class="fas fa-calendar"></i> mon - sat </span>
+              <span> <i class="fas fa-clock"></i> 1 hours </span>
+            </div>
+            <h3>Weight management course</h3>
+            <a href="/getStart.html" class="btn">Join Now</a>>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/courses/img-3.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <span> <i class="fas fa-calendar"></i> mon - sat </span>
+              <span> <i class="fas fa-clock"></i> 1 hours </span>
+            </div>
+            <h3>GGFI online fast track course</h3>
+            <a href="/getStart.html" class="btn">Join Now</a>>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/courses/img-4.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <span> <i class="fas fa-calendar"></i> mon - sat </span>
+              <span> <i class="fas fa-clock"></i> 1 hours </span>
+            </div>
+            <h3>GGFI Bhopal</h3>
+            <a href="/getStart.html" class="btn">Join Now</a>>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/courses/img-5.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <span> <i class="fas fa-calendar"></i> mon - sat </span>
+              <span> <i class="fas fa-clock"></i> 1 hours </span>
+            </div>
+            <h3>GGFI Advanced Personal Training Course</h3>
+            <a href="/getStart.html" class="btn">Join Now</a>>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/courses/img-6.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <span> <i class="fas fa-calendar"></i> mon - sat </span>
+              <span> <i class="fas fa-clock"></i> 1 hours </span>
+            </div>
+            <h3>GGFI short course - sports injuries</h3>
+            <a href="/getStart.html" class="btn">Join Now</a>>
+          </div>
+        </div>
+      </div>
+      <div class="heading marg">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- courses section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a class="links" href="/index.HTML">Home</a>
+          <a class="links" href="/getStart.html">Contact Us</a>
+          <a class="links" href="/supplement.html">Supplement</a>
+          <a class="links" href="/pricing.html">Plans</a>
+          <a class="links" href="/services.html">Service</a>
+          <a class="links" href="#">Courses</a>
+        </div>
+
+        <div class="box">
+          <h3>opening hours</h3>
+          <p>monday : <i> 7:00am - 10:30pm </i></p>
+          <p>tuesday : <i> 7:00am - 10:30pm </i></p>
+          <p>wednesday : <i> 7:00am - 10:30pm </i></p>
+          <p>friday : <i> 7:00am - 10:30pm </i></p>
+          <p>saturday : <i> 7:00am - 10:30pm </i></p>
+          <p>sunday : <i> closed </i></p>
+        </div>
+
+        <div class="box">
+          <h3>opening hours</h3>
+          <p><i class="fas fa-phone"></i> +123-456-7890</p>
+          <p><i class="fas fa-phone"></i> +111-222-3333</p>
+          <p><i class="fas fa-envelope"></i> SKNCOE@gmail.com</p>
+          <p><i class="fas fa-map"></i> Pune, india - 414001</p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <form action="">
+            <input
+              type="email"
+              name=""
+              class="email"
+              placeholder="enter your email"
+              id=""
+            />
+            <input type="submit" value="subscribe" class="btn" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="credit">
+      © 2022 Proudly Powered by <span>SKNCOE Students</span> | all rights
+      reserved !
+    </div>
+
+    <!-- footer section ends -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym Website</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts      -->
+
+    <header class="header">
+      <nav class="head">
+        <div>
+          <img class="log" src="images/logo.png" alt="" />
+        </div>
+        <a href="#" class="logo"> <span>Level</span>Up </a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="/getStart.html">Contact Us</a>
+        <a href="/supplement.html">Supplement</a>
+        <a href="/pricing.html">Plans</a>
+        <a href="/services.html">Service</a>
+        <a href="/courses.html">Courses</a>
+        <div class="mx-2 my-2 text-center">
+          <button
+            class="sigbtn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#SignUpModal"
+          >
+            SignUp
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- header section ends     -->
+
+    <!-- SignUp Modal start-->
+    <div
+      class="modal fade"
+      id="SignUpModal"
+      tabindex="-1"
+      aria-labelledby="SignUpModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="SignUpModalLabel">
+              Get LevelUp Gym Account
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="ssac">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="cexampleInputPassword1" class="form-label"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="cexampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button
+                type="submit"
+                class="sigbtn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                SignUp
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="sigbtn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SignUp Modal end -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide slide"
+            style="background: url(images/home-bg-3.jpg) no-repeat"
+          >
+            <div class="content">
+              <span>be strong, be fit</span>
+              <h3>Make yourself stronger than your excuses.</h3>
+              <a href="#" class="btn">get started</a>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide slide"
+            style="background: url(images/home-bg-2.jpg) no-repeat"
+          >
+            <div class="content">
+              <span>be strong, be fit</span>
+              <h3>Make yourself stronger than your excuses.</h3>
+              <a href="#" class="btn">get started</a>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide slide"
+            style="background: url(images/home-bg-1.jpg) no-repeat"
+          >
+            <div class="content">
+              <span>be strong, be fit</span>
+              <h3>Make yourself stronger than your excuses.</h3>
+              <a href="#" class="btn">get started</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+      <div class="image">
+        <img src="images/about-img.jpg" alt="" />
+      </div>
+
+      <div class="content">
+        <span>about us</span>
+        <h3 class="title">Every day is a chance to become better</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quia
+          accusamus dicta inventore nobis obcaecati vero odio, id dolorum.
+          Consequatur ex, aperiam deserunt nostrum perferendis illum unde ipsa?
+          Consequatur, distinctio?
+        </p>
+        <div class="box-container">
+          <div class="box">
+            <h3><i class="fas fa-check"></i>body and mind</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+              enim.
+            </p>
+          </div>
+          <div class="box">
+            <h3><i class="fas fa-check"></i>healthy life</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+              enim.
+            </p>
+          </div>
+          <div class="box">
+            <h3><i class="fas fa-check"></i>strategies</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+              enim.
+            </p>
+          </div>
+          <div class="box">
+            <h3><i class="fas fa-check"></i>workout</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+              enim.
+            </p>
+          </div>
+        </div>
+        <a href="#" class="btn">read more</a>
+      </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- features section starts  -->
+
+    <section class="features" id="features">
+      <h1 class="heading"><span>gym features</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/features/f-img-1.jpg" alt="" />
+          </div>
+          <div class="content">
+            <img src="images/features/icon-1.png" alt="" />
+            <h3>body building</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Similique, atque.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+
+        <div class="box second">
+          <div class="image">
+            <img src="images/features/f-img-2.jpg" alt="" />
+          </div>
+          <div class="content">
+            <img src="images/features/icon-2.png" alt="" />
+            <h3>gym for men</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Similique, atque.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/features/f-img-3.jpg" alt="" />
+          </div>
+          <div class="content">
+            <img src="images/features/icon-3.png" alt="" />
+            <h3>gym for women</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Similique, atque.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- features section ends -->
+
+    <!-- banner section starts  -->
+
+    <section class="banner">
+      <span>join us now</span>
+      <h3>get upto 50% discount</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+        architecto nesciunt aut sapiente quis inventore quam vitae quod illum
+        incidunt.
+      </p>
+      <a href="/pricing.html" class="btn">get discount</a>
+    </section>
+
+    <!-- banner section ends -->
+
+    <!-- trainers section starts  -->
+
+    <section class="trainers" id="trainers">
+      <h1 class="heading"><span>expert trainers</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images/trainer/trainer-1.jpg" alt="" />
+          <div class="content">
+            <span>expert trainer</span>
+            <h3>William Rodriguez</h3>
+            <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-pinterest"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/trainer/trainer-2.jpg" alt="" />
+          <div class="content">
+            <span>expert trainer</span>
+            <h3>Juliet Hernandez</h3>
+            <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-pinterest"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/trainer/trainer-3.jpg" alt="" />
+          <div class="content">
+            <span>expert trainer</span>
+            <h3>Maria deo</h3>
+            <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-pinterest"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/trainer/trainer-4.jpg" alt="" />
+          <div class="content">
+            <span>expert trainer</span>
+            <h3>Lily Smith</h3>
+            <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-pinterest"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- trainers section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="review">
+      <div class="information">
+        <span>testimonials</span>
+        <h3>what our clients says</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+          voluptas praesentium asperiores fugiat, excepturi odit obcaecati a
+          voluptatibus earum quisquam?
+        </p>
+        <a href="#" class="btn">read more</a>
+      </div>
+
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Accusamus, quo.
+            </p>
+            <div class="user">
+              <img src="images/clients/sagar.jpeg" alt="" />
+              <div class="info">
+                <h3>Sagar Bankar</h3>
+                <span>designer</span>
+              </div>
+              <i class="fas fa-quote-left"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Accusamus, quo.
+            </p>
+            <div class="user">
+              <img src="images/clients/swa.png" alt="" />
+              <div class="info">
+                <h3>Swapnil Bankar</h3>
+                <span>designer</span>
+              </div>
+              <i class="fas fa-quote-left"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Accusamus, quo.
+            </p>
+            <div class="user">
+              <img src="images/clients/sachin.png" alt="" />
+              <div class="info">
+                <h3>Sachin Nirate</h3>
+                <span>designer</span>
+              </div>
+              <i class="fas fa-quote-left"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Accusamus, quo.
+            </p>
+            <div class="user">
+              <img src="images/clients/pankaj.png" alt="" />
+              <div class="info">
+                <h3>Pankaj Godara</h3>
+                <span>designer</span>
+              </div>
+              <i class="fas fa-quote-left"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- blogs section starts  -->
+
+    <section class="blogs" id="blogs">
+      <h1 class="heading"><span>daily posts</span></h1>
+
+      <div class="swiper blogs-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog/blog-1.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="link">
+                <a href="#">by user</a> <span>|</span>
+                <a href="#">21st may, 2021</a>
+              </div>
+              <h3>fitness is not about being better than someone else</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Aliquam, tenetur?
+              </p>
+              <a href="#" class="btn">read more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog/blog-2.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="link">
+                <a href="#">by user</a> <span>|</span>
+                <a href="#">21st may, 2021</a>
+              </div>
+              <h3>fitness is not about being better than someone else</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Aliquam, tenetur?
+              </p>
+              <a href="#" class="btn">read more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog/blog-3.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="link">
+                <a href="#">by user</a> <span>|</span>
+                <a href="#">21st may, 2021</a>
+              </div>
+              <h3>fitness is not about being better than someone else</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Aliquam, tenetur?
+              </p>
+              <a href="#" class="btn">read more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog/blog-4.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="link">
+                <a href="#">by user</a> <span>|</span>
+                <a href="#">21st may, 2021</a>
+              </div>
+              <h3>fitness is not about being better than someone else</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Aliquam, tenetur?
+              </p>
+              <a href="#" class="btn">read more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog/blog-5.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="link">
+                <a href="#">by user</a> <span>|</span>
+                <a href="#">21st may, 2021</a>
+              </div>
+              <h3>fitness is not about being better than someone else</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Aliquam, tenetur?
+              </p>
+              <a href="#" class="btn">read more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- blogs section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a class="links" href="/index.HTML">Home</a>
+          <a class="links" href="/getStart.html">Contact Us</a>
+          <a class="links" href="/supplement.html">Supplement</a>
+          <a class="links" href="pricing.html">Plans</a>
+          <a class="links" href="/services.html">Service</a>
+          <a class="links" href="/courses.html">Courses</a>
+        </div>
+
+        <div class="box">
+          <h3>opening hours</h3>
+          <p>monday : <i> 7:00am - 10:30pm </i></p>
+          <p>tuesday : <i> 7:00am - 10:30pm </i></p>
+          <p>wednesday : <i> 7:00am - 10:30pm </i></p>
+          <p>friday : <i> 7:00am - 10:30pm </i></p>
+          <p>saturday : <i> 7:00am - 10:30pm </i></p>
+          <p>sunday : <i> closed </i></p>
+        </div>
+
+        <div class="box">
+          <h3>opening hours</h3>
+          <p><i class="fas fa-phone"></i> +123-456-7890</p>
+          <p><i class="fas fa-phone"></i> +111-222-3333</p>
+          <p><i class="fas fa-envelope"></i> sKNCOE@gmail.com</p>
+          <p><i class="fas fa-map"></i> Pune, india - 414001</p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <form action="">
+            <input
+              type="email"
+              name=""
+              class="email"
+              placeholder="enter your email"
+              id=""
+            />
+            <input type="submit" value="subscribe" class="btn" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="credit">
+      © 2022 Proudly Powered by <span>SKNCOE Students</span> | all rights
+      reserved !
+    </div>
+
+    <!-- footer section ends -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
