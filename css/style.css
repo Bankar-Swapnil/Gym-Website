@@ -1110,8 +1110,13 @@ section {
 .margb{
   margin-top: 8%;
 }
+.mar{
+  margin-top: 8%;
+}
 
-
+.ma{
+  margin-top: 8%;
+}
 
 @media (max-width: 600px) {
   .margb{
