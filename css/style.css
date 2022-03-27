@@ -945,7 +945,7 @@ section {
 
 .counter {
   margin-top: 8%;
-  background: url(/images/courses/counter-bg.jpg) no-repeat;
+  background: url(images/courses/counter-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
