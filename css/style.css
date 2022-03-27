@@ -1118,7 +1118,7 @@ section {
   margin-top: 8%;
 }
 .m{
-  margin-top: 6%;
+  margin-top: 6% !important;
 }
 
 @media (max-width: 600px) {
@@ -1132,6 +1132,6 @@ section {
     margin-top: 28%;
   }
   .m{
-    margin-top: 55%;
+    margin-top: 55% !important;
   }
 }
