@@ -1120,6 +1120,10 @@ section {
 .m{
   margin-top: 6% !important;
 }
+.contact-section{
+  margin-bottom: 3%;
+}
+
 
 @media (max-width: 600px) {
   .margb{
@@ -1134,4 +1138,8 @@ section {
   .m{
     margin-top: 55% !important;
   }
+  .contact-section{
+    margin-bottom: 20%;
+  }
+
 }
